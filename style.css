@@ -14,7 +14,7 @@ body {
 .rightColumn .jobTitle, .rightColumn .degreeTitle, .rightColumn .outreachTitle, .leftColumn .companyName, .leftColumn .schoolName, .leftColumn .projectName, .leftColumn .outreachName, .header .contactName, .sectionHeader {
   font-weight: 600;
   font-family: "Yantramanav", sans-serif;
-  font-size: .9em;
+  font-size: 1em;
   color: #5a5757;
   text-transform: capitalize;
 }
@@ -22,7 +22,7 @@ body {
 .rightColumn .jobDescription, .rightColumn .projectDescription, .rightColumn .degreeDescription, .rightColumn .outreachDescription, .leftColumn .dateRange, .header .contactDetails a, .description {
   font-weight: 500;
   font-family: "Noto Sans HK", sans-serif;
-  font-size: 0.85em;
+  font-size: 0.95em;
   color: #737373;
 }
 
