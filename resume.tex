@@ -1,0 +1,110 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.5in,nofoot]{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1}{*1}
+
+\newcommand{\entry}[4]{
+  \noindent\textbf{#1} \hfill #2 \\
+  \noindent\textit{#3} \hfill \textit{#4} \\
+  \vspace{2pt}
+}
+
+\newcommand{\project}[2]{
+  \noindent\textbf{#1} \hfill #2 \\
+  \vspace{2pt}
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{\Large Eduardo Palhares}
+
+\vspace{0.4em}
+
+\noindent \faMapMarker ~ Cotia, Brazil \faUser ~ 27 years old \\
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\raggedleft
+{\color{blue}} \href{mailto:eduardo@palharez.dev}{\faEnvelope \space eduardo@palharez.dev}
+
+\vspace{0.2em}
+
+{\color{blue}} \href{https://palharez.dev/}{\faGlobe \space Website} \quad
+{\color{blue}} \href{https://github.com/palharez}{\faGithub \space GitHub} \quad
+{\color{blue}} \href{https://linkedin.com/in/eduardopalhares}{\faLinkedin \space LinkedIn} \\
+\end{minipage}
+
+\vspace{0.5em}
+
+\section*{Experience}
+\vspace{0.6em}
+\entry{Tenchi Security}{\faCalendar \space May 2024 -- present}{Backend Engineer}{\faMapMarker \space Remote}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Developed an integration for retrieving data from Cloudflare, enhancing operational insights and accessibility.
+\item Developed a data feed to integrate an internal API with Archer, enabling seamless data flow and functionality.
+\item Maintained and developed an internal SDK/CLI, streamlining client integrations and improving developer experience.
+\end{itemize}
+
+\entry{xippTech}{\faCalendar \space June 2023 -- May 2024}{Software Developer}{\faMapMarker \space Remote}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Developed an Odoo module for SLA and task recurrence management in helpdesk operations, improving service efficiency.
+\item Generated translation files for individual modules, expediting project delivery timelines and enhancing localization.
+\item Designed an activity workflow for insurance implementation control, ensuring streamlined processes and compliance.
+\end{itemize}
+
+\entry{Raízs}{\faCalendar \space September 2019 -- June 2023}{Software Developer}{\faMapMarker \space Remote}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Developed an Odoo module for integration with the VTEX platform, streamlining data synchronization and operations.
+\item Created an Odoo module for product markup calculations, enhancing sales efficiency and pricing accuracy.
+\item Designed an Odoo module integrating the Juno service for automated boleto issuance, simplifying financial processes.
+\item Built an integration service with the iFood supplier platform, enabling seamless data exchange and order management.
+\item Developed a recommendation service for product substitution in shopping carts, optimizing user experience and inventory management.
+\end{itemize}
+
+\entry{Belga.io}{\faCalendar \space Jan 2019 -- September 2019}{Software Developer}{\faMapMarker \space Remote}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+\item Designed and implemented streamlined cryptocurrency arbitrage components leveraging JavaScript, Redis, WebSocket, and Docker for efficient market operations
+\item Refactored and optimized legacy codebases, transitioning from Python to JavaScript, with an emphasis on performance enhancement and maintainability.
+\item Developed new integrations for the open-source CCXT library, enabling expanded functionality and market connectivity.
+\end{itemize}
+
+\section*{Education}
+\vspace{0.6em}
+\entry{Universidade Anhembi Morumbi}{\faCalendar \space August 2023 -- present}{Bachelor's Degree, Computer Science}{\faMapMarker \space São Paulo}
+
+\vspace{-0.6em}
+
+\entry{ETEC - Escola Técnica Estadual de São Paulo}{\faCalendar \space January 2018 -- July 2019}{Technician, Information Technology}{\faMapMarker \space São Paulo}
+
+\section*{Skills}
+\vspace{0.6em}
+\item \textbf{Languages:} \textbf{Native}: Portuguese | \textbf{Advanced}: English
+\item \textbf{Technologies:} Python, Javascript, Typescript, SQL, NoSQL
+\item \textbf{Developer Tools:} Git, AWS, GraphQL, RabbitMQ, Dpcker, Redis
+\item \textbf{Frameworks:} NestJs, Express.js, Flask, Odoo, React.js
+
+\end{document}
